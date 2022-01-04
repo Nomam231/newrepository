@@ -11,7 +11,9 @@ const TourCard = () => {
           alt="image"
           className="img"
         />
-        <Typography variant="h3">Card component.</Typography>
+        <Typography variant="subtitle1" component="h2">
+          Card component.
+        </Typography>
       </Paper>
     </Grid>
   );

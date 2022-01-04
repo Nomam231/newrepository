@@ -8,12 +8,6 @@ const theme = createTheme({
     secondary: {
       main: "#884A93",
     },
-    // common: {},
-    // nav: {
-    //   main: "",
-    //   light: "",
-    //   dark: "",
-    // },
   },
   // breakpoints: {},
   spacing: 8,
@@ -42,6 +36,9 @@ const theme = createTheme({
     // h3: {
     //   fontSize: "2rem",
     // },
+    subtitle1: {
+      fontSize: "1.3rem",
+    },
   },
 });
 
@@ -51,11 +48,18 @@ theme.typography.h3 = {
     fontSize: "1.5rem",
   },
   [theme.breakpoints.up("md")]: {
-    fontSize: "2.4rem",
+    fontSize: "1.4rem",
   },
   [theme.breakpoints.down("sm")]: {
     fontSize: "1rem",
     fontWeight: "normal",
+  },
+};
+
+theme.typography.subtitle1 = {
+  fontSize: "1.5rem",
+  [theme.breakpoints.down("md")]: {
+    fontSize: "1.2rem",
   },
 };
 
