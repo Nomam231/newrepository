@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Typography } from "@mui/material";
+import { Button, CssBaseline, Typography } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter } from "react-router-dom";
 import Routes from "../pages/routes";
@@ -19,9 +19,8 @@ function App() {
   return (
     <BrowserRouter>
       <ThemeProvider theme={theme}>
+        <CssBaseline />
         <Nav changeSt={changeSt} />
-        <Button onClick={changeSt}>change state </Button>
-        <Typography>{state}</Typography>
         <Routes />
         <Footer />
       </ThemeProvider>
