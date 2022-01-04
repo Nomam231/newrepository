@@ -17,19 +17,12 @@ const theme = createTheme({
         // root: { fontSize: "5rem", marginTop: "10rem" },
       },
     },
-    // MuiTypography: {
-    //   defaultProps: {},
-    //   variants: {
-    //     props: {
-    //       variants: "h3",
-    //     },
-    //     style: {
-    //       "@media (min-width:600px)": {
-    //         fontSize: "1.5rem",
-    //       },
-    //     },
-    //   },
-    // },
+    MuiTypography: {
+      variants: [
+        { props: { variant: "body" }, style: { fontSize: "1rem" } },
+        { props: { variant: "body3" }, style: { fontSize: 12 } },
+      ],
+    },
   },
 
   typography: {

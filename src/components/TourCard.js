@@ -1,6 +1,15 @@
-import { Typography, Paper, Grid } from "@mui/material";
+import {
+  Typography,
+  Paper,
+  Grid,
+  Box,
+  Stack,
+  Item,
+  Rating,
+} from "@mui/material";
 import React from "react";
 import "./css/TourCard.css";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 const TourCard = () => {
   return (
@@ -11,9 +20,22 @@ const TourCard = () => {
           alt="image"
           className="img"
         />
-        <Typography variant="subtitle1" component="h2">
-          Card component.
-        </Typography>
+        <Box padding={1}>
+          <Typography variant="subtitle1" component="h2">
+            Card component.
+          </Typography>
+          <Stack direction="row" spacing={1}>
+            <AccessTimeIcon />
+            <Typography variant="body">3 Hour's</Typography>
+          </Stack>
+          <Box sx={{ mt: 3 }}>
+            <Stack direction={"row"} spacing={2}>
+              <Rating readOnly value={3.4} precision={0.5} size="small" />
+              <Typography>4.5</Typography>
+              <Typography variant="body3">(306 review's)</Typography>
+            </Stack>
+          </Box>
+        </Box>
       </Paper>
     </Grid>
   );
